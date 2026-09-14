@@ -80,9 +80,9 @@ ollama pull gpt-oss:120b-cloud
 ## ▶️ Uso
 
 ```bash
-python asistente2.py
+python Asistente.py
 # o con opciones:
-python asistente2.py --model gpt-oss:120b-cloud --no-anim
+python Asistente.py --model gpt-oss:120b-cloud --no-anim
 ```
 
 ### Opciones de línea de comandos
@@ -195,5 +195,5 @@ Sin licencia definida. Uso personal / educativo.
 
 ## 🧾 Versión
 
-**v2.2** — ver bloque docstring al principio de `asistente2.py` para el
+**v2.2** — ver bloque docstring al principio de `Asistente.py` para el
 changelog.

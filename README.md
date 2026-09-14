@@ -40,12 +40,23 @@ pkg update && pkg upgrade -y
 
 # Dependencias base
 pkg install -y python git ffmpeg termux-api poppler less
-pkg install -y whisper            # Whisper desde los repos de Termux
+# Whisper desde github (el proyecto termux-whisper URL: https://github.com/itsmuaaz/termux-whisper)
+# Instalación automática
+curl -sL https://raw.githubusercontent.com/itsmuaaz/termux-whisper/main/install.sh | bash # Instalacion automatica
+
+# Instalación manual
+# pkg install git -y
+# git clone https://github.com/itsmuaaz/termux-whisper.git
+# cd termux-whisper
+# chmod +x core/*.sh menu.sh
+# ./core/setup.sh
 
 # Ollama (elige UNA opción)
 pkg install -y ollama
-#   ...o si el paquete no existe en tu repo:
-#   curl -fsSL https://ollama.com/install.sh | sh
+# o instala core-termux 
+# URL: https://github.com/DevCoreXOfficial/core-termux
+curl -fsSL https://raw.githubusercontent.com/DevCoreXOfficial/core-termux/main/install.sh | bash
+core
 
 # Cliente Python
 pip install --upgrade pip
@@ -57,6 +68,16 @@ ollama pull gpt-oss:120b-cloud    # modelo por defecto (cloud)
 
 # Arrancar el servidor de Ollama (déjalo en otra sesión o en background)
 ollama serve &
+```
+
+Configura Core y Whisper usando los comandos
+```
+# Para config de core
+core
+```
+```
+# Para config de whisper
+whisper
 ```
 
 Instala también la app **Termux:API** desde F-Droid y concédele permisos de

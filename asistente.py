@@ -56,7 +56,7 @@ except ImportError:
 #  CONFIG
 # ============================================================
 VERSION = "2.2"
-DEFAULT_MODEL = "qwen2.5:0.5b"
+DEFAULT_MODEL = "gpt-oss:120b-cloud"
 DEFAULT_SYSTEM = (
     "Eres un asistente util, preciso y amable. "
     "Respondes en el mismo idioma en el que se te habla, de forma clara y concisa."

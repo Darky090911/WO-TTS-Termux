@@ -7,6 +7,8 @@ locales o en la nube vía **Ollama**, y síntesis de voz con `termux-tts-speak`.
 Todo desde la terminal, con atajos de teclado de una sola tecla, cola de TTS con
 streaming y una barra de estado en vivo.
 
+Si tiene algún problema o error al usarlo, coméntelo en el proyecto y será solucionado cuanto antes.
+
 ---
 
 ## ✨ Características
